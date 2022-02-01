@@ -4,6 +4,10 @@ In the project directory, you can run:
 
 ### `npm install`
 
+we also need react to install React-Router-Dom--- because we are icareating a react app that requirs multiple routes.
+for this we do 
+### `npm i react-router-dom`
+
 Once its complete Run:
 
 ### `npm start`
