@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import index from './index.css';
-import Navbar from './Navbar.js';
+import App from './App.js';
 import foot from './footer.js';
-
 import reportWebVitals from './reportWebVitals';
+
 ReactDOM.render(
   <React.StrictMode>
-    <Navbar />
-    <footer />
+    <App />
+   
+   
   </React.StrictMode>,
   document.getElementById('root')
+
+  
+       
 );
 
 // If you want to start measuring performance in your app, pass a function

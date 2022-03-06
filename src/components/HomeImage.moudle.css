@@ -1,0 +1,47 @@
+ .container{
+    left:0%;
+    top:0%;
+    height: 100%;
+    position: relative;
+    overflow: scroll;
+} 
+
+.big_description{
+    font-weight: bold;
+    width: 600px;
+    position:absolute;
+    font-size: 96px;
+    font-family:Abhaya Libre;
+    bottom:550px;
+    left:1200px;
+    color:white;
+}
+
+.small_description{
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    position:absolute;
+    font-family: Abhaya Libre;
+    right:250px;
+    top:650px;
+
+}
+
+.partner_button{
+    background-color:#E84857 ;
+    color: white;
+    position:absolute;
+    font-family: Abhaya Libre;
+    right:300px;
+    top:800px;
+    height:100px;
+    width: 560px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.image{
+    height: 1080px;
+    width: 1920px;
+}

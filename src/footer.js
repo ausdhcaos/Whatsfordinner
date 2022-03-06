@@ -34,8 +34,8 @@ render(
   <div>	
     <Footer>
       <ul>
-	<li>lalalal</li>
-	<li>lalalal</li>
+	<li>News</li>
+  <li>Contact us</li>
       </ul>
     </Footer>
   </div>,
