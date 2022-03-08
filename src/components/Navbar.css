@@ -41,21 +41,26 @@
     margin-top: 20px;
     width: fit-content;
     font-family: Abhaya Libre;
-    
+    min-height: 80px;
     overflow: hidden;
 }
 
-.topnav__right a {
+.topnav__right ul{
+    display: flex;
+    list-style-type: none ;
     font-weight: lighter;
     float: left;
-    color: 000000;
+    color: #000000;
+}
+.topnav__right li{
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 30px;
     text-decoration: none;
     font-size: 36px;
-  }
+}
 
-  .topnav__right a:hover{
+
+.topnav__right li:hover{
       background-color:#E84857;
       text-decoration:underline;
   }
