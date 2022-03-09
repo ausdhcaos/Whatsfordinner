@@ -1,10 +1,11 @@
 
+Before begining make sure you have node js and npm installed.
 
-In the project directory, you can run:
+### In the project directory, you need to run:
 
 ### `npm install`
 
-we also need react to install React-Router-Dom--- because we are icareating a react app that requirs multiple routes.
+we also need react to install React-Router-Dom ---> this is because we are creating a react app that requirs multiple routes.
 for this we do 
 ### `npm i react-router-dom`
 
