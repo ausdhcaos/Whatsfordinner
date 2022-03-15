@@ -5,12 +5,9 @@ import './Register.css';
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
-
-    const checkboxHandler = () => {
-    // if agree === true, it will be set to false
-    // if agree === false, it will be set to true
+    const chkbox = () => {
+    
     setAgree(!agree);
-    // Don't miss the exclamation mark
   };
 
   return (
@@ -22,7 +19,7 @@ const Register = () => {
             <input type='password' className='password' placeholder='Password...'/>
             <input type='password' className='re-password' placeholder='Re-enter Password...'/>
             <input type='text' className='Full-name' placeholder='Enter full name...'/> 
-            <input type="checkbox" id="agree" onChange={checkboxHandler} className='lable'  />
+            <input type="checkbox" id="agree" onChange={chkbox} className='lable'  />
             <h3 >I agree to the Terms and Conditions</h3>
             <button disabled={!agree} className="button">
               Sign Up
