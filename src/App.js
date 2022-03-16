@@ -6,6 +6,7 @@ import Resturants from './pages/Resturants.js';
 import HomeImage from './pages/HomeImage';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Login from './pages/Login';
+import Register from './pages/Register';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         
         <Switch>
             <Route path="/login" > <Login /> </Route>
+            <Route path="/Register" > <Register /> </Route>
              <Route  path="/"> <HomeImage /> </Route>
              <Route path="/resturants" > <Resturants /> </Route> 
              
