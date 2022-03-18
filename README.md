@@ -1,12 +1,17 @@
 
+Before begining make sure you have node js and npm installed.
 
-In the project directory, you can run:
+### In the project directory, you need to run:
 
 ### `npm install`
 
-we also need react to install React-Router-Dom--- because we are icareating a react app that requirs multiple routes.
-for this we do 
+we also need react to install React-Router-Dom ---> this is because we are creating a react app that requirs multiple routes.
+for this we do:
 ### `npm i react-router-dom`
+
+And we also need to install react state hook. this is becasue we need to use state for various purpose.
+for this we do:
+### `npm install --save react-hook-use-state`
 
 Once its complete Run:
 
@@ -30,4 +35,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+Note that current screen size is designed for 1920x1080.
 
