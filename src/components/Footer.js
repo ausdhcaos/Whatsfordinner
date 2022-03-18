@@ -53,7 +53,7 @@ const footer = () => {
       <ul>
         <li>News </li>
         <li>Technical Support</li>
-        <li>Become a partner</li>
+        <li>Terms&Conditions</li>
         <li>About us</li>
       </ul>
     </footer>
