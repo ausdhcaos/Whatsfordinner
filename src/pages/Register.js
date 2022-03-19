@@ -26,7 +26,7 @@ function Register (){
     console.warn(email,name,password)
     let account={email,name,password}
 
-     let result= await fetch("http://localhost:8000/api/register",{
+     let result= await fetch("http://127.0.0.1:8000/api/register",{
         method:'POST',
         headers:{
             "Content-Type":'application/json',
@@ -41,10 +41,6 @@ function Register (){
      history.push("/add")
 
 
-
-    
-    
-    
   }
   //need to fix the confitm password and this needs to be done usiong react hook / useState
   return (
@@ -56,7 +52,7 @@ function Register (){
             <input type='text' value={email} onChange={(e)=>setEmail(e.target.value)} className='Email' placeholder='Email address...'/>
             <input type='text' value={name} onChange={(e)=>setName(e.target.value)} className='Username' placeholder='Username...'/>
             <input type='password' value={password} onChange={(e)=>setPassword(e.target.value)} className='password' placeholder='Password...'/>
-            <input type="checkbox" id="agree" onChange={chkbox} className='lable'  />
+            <input type='checkbox' id='agree' onChange={chkbox} className='lable'  />
             <h3 >I agree to the Terms and Conditions</h3>
             <button disabled={!agree} className="button" onClick={register}>
                 Sign Up
