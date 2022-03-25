@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom'
+//import { useHistory } from 'react-router-dom'
 import bgimg from './login.png';
 import { Link } from 'react-router-dom';
 import './Login.css';
@@ -8,7 +8,7 @@ function Login (){
   //login api integration
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
-  const history = useHistory();
+  //const history = useHistory();
   
 
   async function login()
@@ -16,7 +16,7 @@ function Login (){
     console.warn(email,password)
     let item={email,password};
     
-    let result= await fetch("https://betterdinnerapi.herokuapp.com/api/login",{
+    let result= await fetch("http://betterdinnerapi.herokuapp.com/api/login",{
         method:'POST',
         headers:{
             "Content-Type":"application/json",
@@ -27,7 +27,7 @@ function Login (){
 
       result = await result.json();
       localStorage.setItem("user-info",JSON.stringify(result))
-      history.push("/add")
+      //history.push("/add")
         
 
   }
