@@ -26,7 +26,7 @@ function Register (){
     console.warn(email,name,password)
     let account={email,name,password}
 
-     let result= await fetch("http://127.0.0.1:8000/api/register",{
+     let result= await fetch("https://betterdinnerapi.herokuapp.com/api/register",{
         method:'POST',
         headers:{
             "Content-Type":'application/json',
