@@ -1,15 +1,45 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom'
 import bgimg from './login.png';
 import { Link } from 'react-router-dom';
 import './Login.css';
-const login = () => {
+function Login (){
+
+  //login api integration
+  const [email,setEmail]=useState("")
+  const [password,setPassword]=useState("")
+  const history = useHistory();
+  
+
+  async function login()
+  {
+    console.warn(email,password)
+    let item={email,password};
+    
+    let result= await fetch("https://betterdinnerapi.herokuapp.com/api/login",{
+        method:'POST',
+        headers:{
+            "Content-Type":"application/json",
+            "Accept":'application/json',
+           }, 
+        body:JSON.stringify(item)
+      });
+
+      result = await result.json();
+      localStorage.setItem("user-info",JSON.stringify(result))
+      history.push("/add")
+        
+
+  }
+
+
   return (
     <div className='main'>  
         <form className='login-form'>
             <h1 >log in to continue</h1>
-            <input type='text' className='username' placeholder='username'/>
-            <input type='password' className='password' placeholder='password'/>
-            <button className='button'>Log in ></button>
+            <input type='text' className='username' onChange={(e)=>setEmail(e.target.value)} placeholder='Email'/>
+            <input type='password' value={password} onChange={(e)=>setPassword(e.target.value)} className='password' placeholder='Password'/>
+            <button onClick={login} className='button'>Log in > </button>
             <text className='register'>No account yet? <Link to="/Register" style={{ color:'white' }}>Register here</Link></text>
             <text className='trouble'>Trouble signing in? <Link to="/trouble_sigin_in" style={{ color:'white' }}>Click here</Link></text>
             
@@ -19,4 +49,4 @@ const login = () => {
   )
 }
 
-export default login
+export default Login
