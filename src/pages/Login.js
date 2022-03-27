@@ -16,7 +16,7 @@ function Login (){
     console.warn(email,password)
     let item={email,password};
     
-    let result= await fetch("http://betterdinnerapi.herokuapp.com/api/login",{
+    let result= await fetch("https://api.betterdinner.space/api/login",{
         method:'POST',
         headers:{
             "Content-Type":"application/json",
