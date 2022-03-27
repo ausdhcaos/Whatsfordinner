@@ -25,14 +25,10 @@ function Login (){
            }, 
         body:JSON.stringify(item)
       });
-      login.use(function(req, res, next) {
-          res.header("Access-Control-Allow-Origin", "https://api.betterdinner.space/login"); // update to match the domain you will make the request from
-          res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-          next();
-      });
+      
 
       result = await result.json();
-      sessionStorage.setItem("user-info",JSON.stringify(result))
+      sessionStorage.getItem("user-info",JSON.stringify(result))
       //history.push("/add")
         
 
