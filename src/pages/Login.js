@@ -3,13 +3,14 @@ import React, { useState, useEffect } from 'react';
 import bgimg from './login.png';
 import { Link } from 'react-router-dom';
 import './Login.css';
+
 function Login (){
 
   //login api integration
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
   //const history = useHistory();
-  
+
 
   async function login()
   {
@@ -24,9 +25,14 @@ function Login (){
            }, 
         body:JSON.stringify(item)
       });
+      login.use(function(req, res, next) {
+          res.header("Access-Control-Allow-Origin", "https://api.betterdinner.spave"); // update to match the domain you will make the request from
+          res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+          next();
+      });
 
       result = await result.json();
-      localStorage.setItem("user-info",JSON.stringify(result))
+      sessionStorage.setItem("user-info",JSON.stringify(result))
       //history.push("/add")
         
 
