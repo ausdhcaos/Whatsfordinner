@@ -1,33 +1,36 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom'
+//import { useHistory } from 'react-router-dom'
 import bgimg from './login.png';
 import { Link } from 'react-router-dom';
 import './Login.css';
+
 function Login (){
 
   //login api integration
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
-  const history = useHistory();
-  
+  //const history = useHistory();
+
 
   async function login()
   {
     console.warn(email,password)
     let item={email,password};
     
-    let result= await fetch("https://api.betterdinner.space/api/login",{
-        method:'POST',
-        headers:{
+
+    let result= await fetch("https://cors-anywhere.herokuapp.com/https://api.betterdinner.space/api/login",{
+         method:'POST',
+         headers:{
             "Content-Type":"application/json",
             "Accept":'application/json',
            }, 
         body:JSON.stringify(item)
       });
+      
 
       result = await result.json();
-      localStorage.setItem("user-info",JSON.stringify(result))
-      history.push("/add")
+      sessionStorage.getItem("user-info",JSON.stringify(result))
+      //history.push("/add")
         
 
   }
