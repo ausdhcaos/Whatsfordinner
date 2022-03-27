@@ -26,7 +26,7 @@ function Register (){
     console.warn(email,name,password)
     let account={email,name,password}
 
-     let result= await fetch("https://betterdinnerapi.herokuapp.com/api/register",{
+     let result= await fetch("https://api.betterdinner.space/api/register",{
         method:'POST',
         headers:{
             "Content-Type":'application/json',
