@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { useHistory } from 'react-router-dom'
 import bgimg from './login.png';
 import { Link } from 'react-router-dom';
 import './Register.css';
+import LoginHeader from "../components/loginHeader";
 
 function Register (){
     //set use state for registerand t&c check box
@@ -12,34 +13,43 @@ function Register (){
     };
 
   // api integration
+    {/*  useEffect(()=>{
+        if(localStorage.getItem('user-info'))
+        {
+            history.push("/")
+        }
+    },[])*/}
 
   const [name,setName]=useState("")
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
-  //const [repassword,setRepassword]=useState("")-- need to fix thin  in react and not in api
   const history=useHistory();
   
 //asunc function for registering 
   async function register()
   {
     //check input on console
-    console.warn(email,name,password)
-    let account={email,name,password}
+
+    let item={email,name,password}
+      console.warn(item)
 
 
      let result= await fetch("https://cors-anywhere.herokuapp.com/https://api.betterdinner.space/api/register",{
         method:'POST',
+         body:JSON.stringify(item),
         headers:{
             "Content-Type":'application/json',
             "Accept":'application/json',
            // "X-Requested-With": "XMLHttpRequest" --> dont think  we need this as its not in the header
-        },
-        body:JSON.stringify(account)
+        }
+
     });
 
      result = await result.json();
+     console.warn("result",result)
      localStorage.setItem("user-info",JSON.stringify(result))
-     history.push("/add")
+
+     //history.push("/add")
 
 
   }
@@ -47,6 +57,7 @@ function Register (){
   return (
     <div className='main'>  
         <form className='Register-form'>
+            <LoginHeader />
             <h1 >Sign up to Better Dinner</h1>
 
 
