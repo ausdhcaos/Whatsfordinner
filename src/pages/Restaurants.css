@@ -1,0 +1,37 @@
+.restaurants{
+    left:0%;
+    top:0%;
+    height: 100%;
+    position: relative;
+    overflow: scroll;
+} 
+.buttons{
+    position: relative;
+    height:1080px;
+    width:1920;
+}
+
+.buttons_title{
+    top:20px;
+    position: absolute;
+    font-size: 64px;
+    font-family: Abhaya Libre;
+    padding-left: 150px;
+}
+
+.choices{
+    top:150px;
+    position: absolute;
+    display: flex;
+    gap: 100px 300px ;
+    left: 150px;
+    flex-wrap: wrap;
+}
+
+.choice{
+    background-color: #E84857;
+    height: 310px;
+    width: 540px;
+    border:1px;
+    border-radius: 25px;
+}
