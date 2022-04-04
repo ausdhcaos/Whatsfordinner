@@ -1,9 +1,9 @@
-import React from 'react'
-
-const resturants = () => {
-  return (
-    <div>resturants</div>
-  )
+function Resturants()
+{
+    return(
+        <div>
+            <h1 style={{backgroundColor: "black"}}>Hello meeeee </h1>
+        </div>
+    )
 }
-
-export default resturants
+export default Resturants
