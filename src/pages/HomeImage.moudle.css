@@ -76,3 +76,22 @@
     border:1px;
     border-radius: 25px;
 }
+
+.rest_pic{
+    height: 310px;
+    width: 540px;
+    border-radius: 25px;
+}
+
+.rest_name{
+    height: 80px;
+    position: relative;
+    background-color: #E84857;
+    top:-80px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size:36px;
+    font-family: Abhaya Libre;
+    color:white;
+    padding-left: 50px;
+}

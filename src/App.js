@@ -17,8 +17,9 @@ function App() {
         <Switch>
             <Route path="/login" > <Login /> </Route>
             <Route path="/Register" > <Register /> </Route>
-             <Route  path="/"> <HomeImage /> </Route>
-             <Route path="/resturants" > <Resturants /> </Route> 
+            <Route path="/resturants" > <Resturants /> </Route> 
+            <Route  path="/"> <HomeImage /> </Route>
+            
              
           
             
