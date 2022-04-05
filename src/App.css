@@ -4,6 +4,13 @@
   height: 1080px;
 
 }
+.Resturants {
+  /* text-align: center; */
+  position: relative;
+  height: 1080px;
+  color: black;
+
+}
 /* #image: {
     flex: 1;
     width: null;

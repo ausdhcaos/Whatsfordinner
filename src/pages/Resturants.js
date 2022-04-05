@@ -25,5 +25,4 @@ const resturants = () => {
     </div>
   )
 }
-
 export default resturants
