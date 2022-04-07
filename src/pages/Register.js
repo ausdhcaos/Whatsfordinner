@@ -25,7 +25,6 @@ function Register (){
     //check input on console
     console.warn(email,name,password)
     let account={email,name,password}
-
      let result= await fetch("http://localhost:8000/api/register",{
         method:'POST',
         headers:{

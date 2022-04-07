@@ -1,12 +1,15 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useHistory } from 'react-router-dom'
 import bgimg from './login.png';
 import { Link } from 'react-router-dom';
 import './Login.css';
+import axios from './api/axios'
+import AuthContext from "./context/Auth-Provider"
 function Login (){
 
   //login api integration
+  const {setAuth} = useContext(AuthContext);
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
   const history = useHistory();
@@ -33,7 +36,36 @@ function Login (){
       localStorage.setItem("user-info",JSON.stringify(result))
       history.push("/add")
         
-
+  }
+  /*const login = async(e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:8000/api/login",
+      JSON.stringify({email,password}),
+        {
+          headers:{'Content-Type: ': 'application/json'},
+          withCredentials: true
+        }
+      );
+      console.log(JSON.stringify(response?.data));
+      const accessToken =response?.data?.accessToken;
+      const roles = response?.data?.roles;
+      setAuth({email, password, roles, accessToken});
+      setEmail('');
+      setPassword('');
+    }
+    catch(err) {
+      if (!err?.response) {
+        setErrMsg('No Server Response');
+      } else if (err.response?.status === 400) {
+        setErrMsg('Missing Username or Password');
+      } else if (err.response?.status === 401) {
+        setErrMsg('Unauthorized');
+      } else {
+        setErrMsg('Login Failed');
+      }
+      errRef.current.focus();
+    }*/
   }
 
 
