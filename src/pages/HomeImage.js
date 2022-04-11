@@ -3,10 +3,12 @@ import background from "./home.jpg";
 import mrlee from"../components/MrLee.jpg"
 import pizzaworld from"../components/PizzaWorld.jpg"
 import steakhouse from"../components/KyleSteakhouse.jpg"
+import Navbar from '../components/Navbar.js';
 
 const HomeImage = () =>{
     return(
         <div className="container">
+            <Navbar/>
             <img className="image" src={background} alt="homeImg"/>
             <text className="big_description">Best <font color="EC4C5A">Food</font> Delivery in your area</text>
             <text className="small_description"> For A Quality Dining Experience </text>

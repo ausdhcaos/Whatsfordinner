@@ -12,7 +12,6 @@
 }
 
 .topnav__left{
-   
     width: 100px;
     position: relative;
     color: red;
@@ -46,6 +45,16 @@
 }
 
 .topnav__right ul{
+    
+    display: flex;
+    list-style-type: none ;
+    font-weight: lighter;
+    float: left;
+    color: #000000;
+    
+}
+.topnav__left ul{
+    font-family: Abhaya Libre;
     display: flex;
     list-style-type: none ;
     font-weight: lighter;
@@ -54,6 +63,13 @@
     
 }
 .topnav__right li{
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+.topnav__left li{
     text-align: center;
     padding: 14px 30px;
     text-decoration: none;

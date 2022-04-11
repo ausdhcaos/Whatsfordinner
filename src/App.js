@@ -7,17 +7,19 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Resturants from "./pages/Resturants";
+import FirstRestExample from './pages/FirstRestExample';
 
 function App() {
   return (
     <Router>
        <div className='App'>
-        <Navbar /> 
+        {/* <Navbar />  */}
         
         <Switch>
             <Route path="/login" > <Login /> </Route>
             <Route path="/Register" > <Register /> </Route>
             <Route path="/resturants" > <Resturants /> </Route> 
+            <Route path="/firstResturant" > <FirstRestExample /> </Route> 
             <Route  path="/"> <HomeImage /> </Route>
             
              
