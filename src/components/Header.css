@@ -1,0 +1,21 @@
+.color-nav{
+    width:100%;
+    z-index: 1000;
+    height: 50px;
+    background-color: darkslategrey;
+    top:120px;
+    position: absolute;
+}
+.topnav__right{
+    margin-left: 300px;
+    margin-top: 20px;
+    width: fit-content;
+    font-family: Abhaya Libre;
+    min-height: 80px;
+    overflow: hidden;
+
+
+}
+
+
+

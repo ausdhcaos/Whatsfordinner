@@ -10,27 +10,23 @@ import Resturants from "./pages/Resturants";
 import RestLogin from "./pages/RestLogin";
 
 
+
 function App() {
   return (
     <Router>
        <div className='App'>
         <Navbar /> 
-        
-        <Switch>
-            <Route path="/login" > <Login /> </Route>
-            <Route path="/Register" > <Register /> </Route>
-            <Route exact path="/RestLogin" component={RestLogin} />
-            <Route path="/resturants" > <Resturants /> </Route> 
-            <Route  path="/"> <HomeImage /> </Route>
+             <Switch>
+                <Route path="/login" > <Login /> </Route>
+                <Route path="/Register" > <Register /> </Route>
+                <Route exact path="/RestLogin" component={RestLogin} />
+                <Route path="/resturants" > <Resturants /> </Route>
+                <Route  path="/"> <HomeImage /> </Route>
+            </Switch>
+        <Footer />
 
 
-
-        </Switch>
-     <buttones />
-       <Footer />
-
-
-      </div>
+         </div>
 
     </Router>
 

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e9a747f-9710-4c7d-8604-06463c3585cb" name="Changes" comment="" />
+    <list default="true" id="0e9a747f-9710-4c7d-8604-06463c3585cb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/pages/RestLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/RestLogin.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +28,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../test-login" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -41,6 +43,7 @@
       <workItem from="1649580304197" duration="4944000" />
       <workItem from="1649846086447" duration="189000" />
       <workItem from="1649941246290" duration="30000" />
+      <workItem from="1650006887085" duration="109000" />
     </task>
     <servers />
   </component>
