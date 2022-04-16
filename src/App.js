@@ -8,6 +8,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Resturants from "./pages/Resturants";
 import RestLogin from "./pages/RestLogin";
+import RestSignup from "./pages/RestSignup";
 
 
 
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/login" > <Login /> </Route>
                 <Route path="/Register" > <Register /> </Route>
                 <Route exact path="/RestLogin" component={RestLogin} />
+                 <Route exact path="/RestSignup" component={RestSignup} />
                 <Route path="/resturants" > <Resturants /> </Route>
                 <Route  path="/"> <HomeImage /> </Route>
             </Switch>

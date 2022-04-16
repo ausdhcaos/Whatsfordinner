@@ -4,7 +4,7 @@
     height: 50px;
     background-color: darkslategrey;
     top:120px;
-    position: absolute;
+    position: fixed;
 }
 .topnav__right{
     margin-left: 300px;

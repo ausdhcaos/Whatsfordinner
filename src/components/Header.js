@@ -16,7 +16,7 @@ function Header()
                         <Link to="/add" >Add </Link>
                         <Link to="/update" >Update Product</Link>
                         <Link to="/Restlogin" >Login </Link>
-                        <Link to="/Restregister" >register</Link>
+                        <Link to="/RestSignup" >register</Link>
 
                     </Nav>
                 </div>
