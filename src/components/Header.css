@@ -13,9 +13,16 @@
     font-family: Abhaya Libre;
     min-height: 80px;
     overflow: hidden;
+    position: relative;
+    font-size: 26PX;
+    padding-left: 0px;
+
 
 
 }
-
+.test{
+    padding-left: 0px;
+    padding-right: 50px;
+}
 
 
