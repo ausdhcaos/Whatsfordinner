@@ -1,7 +1,7 @@
 .color-nav{
     width:100%;
     z-index: 1000;
-    height: 50px;
+    height: 70px;
     background-color: darkslategrey;
     top:120px;
     position: fixed;
@@ -22,7 +22,10 @@
 }
 .test{
     padding-left: 0px;
-    padding-right: 50px;
+    padding-right: 200px;
+    font-size: xx-large;
+    font-style: normal;
+    color: whitesmoke;
 }
 
 
