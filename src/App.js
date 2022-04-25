@@ -9,10 +9,10 @@ import Register from './pages/Register';
 import Resturants from "./pages/Resturants";
 import RestLogin from "./pages/RestLogin";
 import RestSignup from "./pages/RestSignup";
-import Contactus from"./pages/Contactus";
-import FirstRestExample from "./pages/FirstRestExample";
-
-
+import News from "./pages/News";
+import TechnicalSupport from "./pages/TechnicalSupport";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -22,18 +22,18 @@ function App() {
              <Switch>
                 <Route path="/login" > <Login /> </Route>
                 <Route path="/Register" > <Register /> </Route>
-                <Route path="/Contactus" > <Contactus /> </Route>
                 <Route exact path="/RestLogin" component={RestLogin} />
                 <Route exact path="/RestSignup" component={RestSignup} />
-                 <Route exact path="/FirstRestExample" component={FirstRestExample} />
-
-                <Route path="/resturants" > <Resturants /> </Route>
-
-                <Route  path="/"> <HomeImage /> </Route>
+				<Route path="/resturants" > <Resturants /> </Route>
+				<Route path="/news" > <News /> </Route>
+				<Route path="/technicalSupport" > <TechnicalSupport /> </Route>
+				<Route path="/termsAndConditions" > <TermsAndConditions /> </Route>
+				<Route path="/aboutUs" > <AboutUs /> </Route>
+                <Route path="/"> <HomeImage /> </Route>
             </Switch>
         <Footer />
-
-
+			<Switch>
+            </Switch>
          </div>
 
     </Router>

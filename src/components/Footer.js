@@ -46,15 +46,16 @@
 
 import React from 'react'
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 const footer = () => {
   return (
     <footer className='foot'>
       <ul>
-        <li>News </li>
-        <li>Technical Support</li>
-        <li>Terms&Conditions</li>
-        <li>About us</li>
+        <li><Link to="/news" style={{ color:'#000000' ,textDecoration: 'none' }}>News</Link></li>
+        <li><Link to="/technicalSupport" style={{ color:'#000000' ,textDecoration: 'none' }}>Technical Support</Link></li>
+        <li><Link to="/termsAndConditions" style={{ color:'#000000' ,textDecoration: 'none' }}>Terms and Conditions</Link></li>
+        <li><Link to="/aboutUs" style={{ color:'#000000' ,textDecoration: 'none' }}>About Us</Link></li>
       </ul>
     </footer>
   )

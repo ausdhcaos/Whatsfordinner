@@ -11,25 +11,10 @@ h1{
     font-weight: normal;
     color:white;
 }
-h2{
-     padding: 150px 200px;
-     textAlign: center;
-     color: black;
-     font-size: 38px;
- }
-
-h4{
-    position: absolute;
-    left:90px;
-    top:760px;
-    font-size: 30px;
-    font-weight: normal;
-    color:Black;
-}
 .main{
     height: 100%;
     width:100%;
-
+   
     display: flex;
 }
 
@@ -69,17 +54,6 @@ h4{
     left:50px;
     background-color: #1C3557;
 }
-.button-contact{
-    font-size: 32px;
-    color: white;
-    position: absolute;
-    top:850px;
-    height:55px;
-    width:150px;
-    left:50px;
-    background-color: #1C3557;
-
-}
 
 .register{
     font-size: 24px;
@@ -96,47 +70,3 @@ h4{
     left:50px;
     top:800px;
 }
-.fullname{
-    font-size: 32px;
-    position: absolute;
-    top:220px;
-    height:55px;
-    width:390px;
-    left:50px;
-}
-.email{
-    font-size: 32px;
-    position: absolute;
-    top:320px;
-    height:55px;
-    width:390px;
-    left:50px;
-}
-.phone{
-    font-size: 32px;
-    position: absolute;
-    top:420px;
-    height:55px;
-    width:390px;
-    left:50px;
-}
-.text{
-    font-size: 32px;
-    position: absolute;
-    top:520px;
-    height:250px;
-    width:390px;
-    left:50px;
-}
-.contact-lable{
-    font-size: 32px;
-    color: white;
-    position: absolute;
-    top:800px;
-    height:35px;
-    width:110px;
-    left:10px;
-    background-color: #1C3557;
-}
-
-

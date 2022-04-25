@@ -4,7 +4,7 @@ import RestNavbar from '../components/RestNavbar.js';
 import pizzaworld from '../components/PizzaWorld.jpg';
 import background from "./home.jpg";
 import './FirstRestExample.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const FirstRestExample = () => {
   return (
