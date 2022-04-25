@@ -1,0 +1,101 @@
+.bg{
+    width:1400px;
+    height: 1000px;
+    float:right;
+}
+h1{
+    position: absolute;
+    left:50px;
+    top:250px;
+    font-size: 48px;
+    font-weight: normal;
+    color:white;
+}
+h3{
+    position: absolute;
+    left:95px;
+    top:876px;
+    font-size: 25px;
+    font-weight: normal;
+    color:white;
+
+}
+.main{
+    height: 100%;
+    width:100%;
+   
+    display: flex;
+}
+
+.Register-form{
+    position: relative;
+    height: 1080px;
+    width: 520px;
+    border:3px;
+    background-color: #E84857;
+}
+
+.Email{
+    font-size: 32px;
+    position: absolute;
+    top:420px;
+    height:55px;
+    width:390px;
+    left:50px;
+}
+.Username{
+    font-size: 32px;
+    position: absolute;
+    top:520px;
+    height:55px;
+    width:390px;
+    left:50px;
+}
+.password{
+    font-size: 32px;
+    position: absolute;
+    top:620px;
+    height:55px;
+    width:390px;
+    left:50px;
+}
+
+.re-password{
+    font-size: 32px;
+    position: absolute;
+    top:720px;
+    height:55px;
+    width:390px;
+    left:50px;
+}
+.Full-name{
+    font-size: 32px;
+    position: absolute;
+    top:820px;
+    height:55px;
+    width:390px;
+    left:50px;
+}
+
+.button{
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top:950px;
+    height:55px;
+    width:175px;
+    left:50px;
+    background-color: #1C3557;
+}
+.lable{
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top:900px;
+    height:35px;
+    width:110px;
+    left:10px;
+    background-color: #1C3557;
+}
+
+

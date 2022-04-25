@@ -1,0 +1,31 @@
+.color-nav{
+    width:100%;
+    z-index: 1000;
+    height: 70px;
+    background-color: darkslategrey;
+    top:120px;
+    position: fixed;
+}
+.topnav__right{
+    margin-left: 300px;
+    margin-top: 20px;
+    width: fit-content;
+    font-family: Abhaya Libre;
+    min-height: 80px;
+    overflow: hidden;
+    position: relative;
+    font-size: 26PX;
+    padding-left: 0px;
+
+
+
+}
+.test{
+    padding-left: 0px;
+    padding-right: 200px;
+    font-size: xx-large;
+    font-style: normal;
+    color: whitesmoke;
+}
+
+

@@ -1,0 +1,97 @@
+ .container{
+    left:0%;
+    top:0%;
+    height: 100%;
+    position: relative;
+    overflow: scroll;
+} 
+
+.big_description{
+    font-weight: bold;
+    width: 600px;
+    position:absolute;
+    font-size: 96px;
+    font-family:Abhaya Libre;
+    bottom:550px;
+    left:1200px;
+    color:white;
+}
+
+.small_description{
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    position:absolute;
+    font-family: Abhaya Libre;
+    right:250px;
+    top:650px;
+
+}
+
+.partner_button{
+    background-color:#E84857 ;
+    color: white;
+    position:absolute;
+    font-family: Abhaya Libre;
+    right:300px;
+    top:800px;
+    height:100px;
+    width: 560px;
+    font-size: 48px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.image{
+    height: 1080px;
+    width: 1920px;
+}
+
+.sec{
+    position: relative;
+    height:1080px;
+    width:1920;
+}
+.sec_title{
+    top:20px;
+    position: absolute;
+    font-size: 64px;
+    font-family: Abhaya Libre;
+    padding-left: 150px;
+}
+
+.rests{
+    top:150px;
+    position: absolute;
+    display: flex;
+    gap: 100px 300px ;
+    left: 150px;
+    flex-wrap: wrap;
+}
+
+.rest{
+    background-color: #E84857;
+    height: 310px;
+    width: 540px;
+    border:1px;
+    border-radius: 25px;
+}
+
+.rest_pic{
+    height: 310px;
+    width: 540px;
+    border-radius: 25px;
+}
+
+.rest_name{
+    height: 80px;
+    position: relative;
+    background-color: #E84857;
+    top:-80px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size:36px;
+    font-family: Abhaya Libre;
+    color:white;
+    padding-left: 50px;
+}

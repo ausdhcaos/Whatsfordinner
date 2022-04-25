@@ -1,0 +1,72 @@
+.bg{
+    width:1400px;
+    height: 1000px;
+    float:right;
+}
+h1{
+    position: absolute;
+    left:50px;
+    top:250px;
+    font-size: 48px;
+    font-weight: normal;
+    color:white;
+}
+.main{
+    height: 100%;
+    width:100%;
+   
+    display: flex;
+}
+
+.login-form{
+    position: relative;
+    height: 1080px;
+    width: 520px;
+    border:3px;
+    background-color: #E84857;
+}
+
+.username{
+    font-size: 32px;
+    position: absolute;
+    top:420px;
+    height:55px;
+    width:390px;
+    left:50px;
+}
+
+.password{
+    font-size: 32px;
+    position: absolute;
+    top:520px;
+    height:55px;
+    width:390px;
+    left:50px;
+}
+
+.button{
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top:620px;
+    height:55px;
+    width:170px;
+    left:50px;
+    background-color: #1C3557;
+}
+
+.register{
+    font-size: 24px;
+    position:absolute;
+    color:white;
+    left:50px;
+    top:750px;
+}
+
+.trouble{
+    font-size: 24px;
+    position:absolute;
+    color:white;
+    left:50px;
+    top:800px;
+}
