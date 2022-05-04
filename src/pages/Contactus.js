@@ -1,7 +1,7 @@
 import React from "react";
 import {useState} from "react";
-//import Header from "../components/Header";
-
+import Navbar from "../components/Navbar";
+import "./Contactus.css"
 
 function Contactus(){
 
@@ -11,6 +11,7 @@ function Contactus(){
     };
     return(
         <div>
+            <Navbar/>
             <form className='contacts'>
                 <h2> Contact us for any known issues!!!!</h2>
 

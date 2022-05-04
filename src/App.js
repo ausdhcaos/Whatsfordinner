@@ -13,22 +13,26 @@ import News from "./pages/News";
 import TechnicalSupport from "./pages/TechnicalSupport";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import AboutUs from "./pages/AboutUs";
+import FirstRestExample from"./pages/FirstRestExample";
+import Contactus from './pages/Contactus';
 
 function App() {
   return (
     <Router>
        <div className='App'>
-        <Navbar /> 
+        {/* <Navbar />  */}
              <Switch>
                 <Route path="/login" > <Login /> </Route>
                 <Route path="/Register" > <Register /> </Route>
                 <Route exact path="/RestLogin" component={RestLogin} />
                 <Route exact path="/RestSignup" component={RestSignup} />
-				<Route path="/resturants" > <Resturants /> </Route>
-				<Route path="/news" > <News /> </Route>
-				<Route path="/technicalSupport" > <TechnicalSupport /> </Route>
-				<Route path="/termsAndConditions" > <TermsAndConditions /> </Route>
-				<Route path="/aboutUs" > <AboutUs /> </Route>
+                <Route path="/resturants" > <Resturants /> </Route>
+                <Route path="/news" > <News /> </Route>
+                <Route path="/technicalSupport" > <TechnicalSupport /> </Route>
+                <Route path="/termsAndConditions" > <TermsAndConditions /> </Route>
+                <Route path="/aboutUs" > <AboutUs /> </Route>
+                <Route path="/mrlee" > <FirstRestExample /> </Route>
+                <Route path="/contactus" > <Contactus /> </Route>
                 <Route path="/"> <HomeImage /> </Route>
             </Switch>
         <Footer />

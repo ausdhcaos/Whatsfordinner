@@ -13,7 +13,7 @@ const resturants = () => {
       <div className="rests">
           <div className="rest"  >
               <img src={mrlee} alt="MrLee" className="rest_pic"/>
-              <div className="rest_name"><Link to="firstResturant" style={{ color:'white' ,textDecoration: 'none' }}>MrLee Chinese Resturant</Link></div>
+              <div className="rest_name"><Link to="mrlee" style={{ color:'white' ,textDecoration: 'none' }}>MrLee Chinese Resturant</Link></div>
           </div>
           <div className="rest">
               <img src={pizzaworld} alt="PizzaWorld" className="rest_pic"/>

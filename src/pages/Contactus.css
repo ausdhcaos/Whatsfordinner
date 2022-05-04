@@ -1,0 +1,27 @@
+.contacts{
+    position: relative;
+    top:250px;
+    font-size: 50px;
+}
+
+.fullname{
+    font-size: 30px;
+}
+
+.email{
+    font-size: 30px;
+}
+
+.phone{
+    font-size: 30px;
+}
+
+.text{font-size: 30px;}
+
+input[type="checkbox"]{
+    zoom: 1.5;
+}
+
+button{
+    font-size: 50px;
+}

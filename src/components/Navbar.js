@@ -13,7 +13,7 @@ const Navbar = () => {
                 <ul>
                     <li><Link to="/" style={{ color:'#000000' ,textDecoration: 'none' }}>Home</Link></li>
                     <li><Link to="/resturants" style={{color:'#000000' ,textDecoration: 'none'}}>Resturants</Link></li>
-                    <li><Link to="/contact" style={{color:'#000000' ,textDecoration: 'none'}}>Contact</Link></li>
+                    <li><Link to="/contactus" style={{color:'#000000' ,textDecoration: 'none'}}>Contact</Link></li>
                     <li><Link to="/login" style={{ backgroundColor:'#E84857',color:'#000000' ,textDecoration: 'none' }}>Login/Register</Link></li>
                 </ul>
                 {/* <a class="active" href="#Resturants">Resturants</a>
